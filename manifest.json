@@ -1,0 +1,24 @@
+{
+	"manifest_version": 3,
+	"name": "ExTab 新标签页",
+	"version": "0.1.0",
+	"description": "一款极简设计的浏览器新标签页扩展程序。",
+	"chrome_url_overrides": {
+		"newtab": "index.html"
+	},
+	"permissions": [
+		"tabs"
+	],
+	"host_permissions": [
+		"*://*/*"
+	],
+	"icons": {
+		"16": "./img/icon-16.png",
+		"48": "./img/icon-48.png",
+		"128": "./img/icon-128.png"
+	},
+	"action": {
+		"default_icon": "./img/icon-48.png",
+		"default_title": "简单即是美！"
+	}
+}

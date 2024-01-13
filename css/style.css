@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    margin-top: 160px;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+#imgbox {
+    margin-bottom: 50px;
+}
+
+#searchbox {
+    width: 520px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #888888;
+    border-radius: 12px 12px 12px 12px;
+}
+
+#searchlogo {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: url(../img/baidu.svg) no-repeat;
+    background-position: center;
+    background-size: 60% 60%;
+}
+
+#searchtxt {
+    width: 430px;
+    height: 38px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+#searchbtn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: url(../img/search.svg) no-repeat;
+    background-position: center;
+    cursor: pointer;
+    filter: alpha(Opacity=100);
+    opacity: 1;
+}
+
+#searchbtn:hover {
+    filter: alpha(Opacity=60);
+    opacity: 0.6;
+}
