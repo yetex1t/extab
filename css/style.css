@@ -1,12 +1,15 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
 }
 
 #content {
-    margin-top: 200px;
-    margin-bottom: 200px;
     text-align: center;
+    margin-top: 25vh;
 }
 
 #imgbox {
@@ -16,42 +19,43 @@ body {
 #searchbox {
     width: 520px;
     height: 40px;
-    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     border: 2px solid #888888;
-    border-radius: 12px 12px 12px 12px;
+    border-radius: 12px;
+    padding: 0 5px;
 }
 
 #searchlogo {
     width: 40px;
     height: 40px;
     border: none;
-    background: url(../img/baidu.svg) no-repeat;
-    background-position: center;
-    background-size: 60% 60%;
+    background: url(../img/baidu.png) no-repeat center;
+    background-size: 60%;
+    cursor: pointer;
 }
 
 #searchtxt {
-    width: 430px;
+    flex: 1;
     height: 38px;
     border: none;
     outline: none;
     font-size: 18px;
+    padding: 0 10px;
 }
 
 #searchbtn {
     width: 40px;
     height: 40px;
     border: none;
-    background: url(../img/search.svg) no-repeat;
-    background-position: center;
+    background: url(../img/search.png) no-repeat center;
+    background-size: 60%;
     cursor: pointer;
-    filter: alpha(Opacity=100);
     opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
 #searchbtn:hover {
-    filter: alpha(Opacity=60);
     opacity: 0.6;
 }
