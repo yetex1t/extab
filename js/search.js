@@ -76,4 +76,25 @@ window.onload = function () {
             searchInput.value = ""; // 清空输入框
         }
     }
+
+    // 获取按钮元素
+    const toggleButton = document.getElementById("toggle-button");
+
+    // 保存主题状态
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+        toggleButton.innerHTML = '<img src="../img/sun.png" width="24">';
+    }
+
+    // 切换暗黑模式
+    toggleButton.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+        const isDark = document.body.classList.contains("dark-mode");
+
+        // 切换按钮图标
+        this.innerHTML = isDark
+            ? '<img src="../img/sun.png" width="24">'
+            : '<img src="../img/moon.png" width="24">';
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
 };
