@@ -1,7 +1,7 @@
 window.onload = function () {
-    const searchInput = document.getElementById("searchtxt");
-    const searchButton = document.getElementById("searchbtn");
-    const searchLogo = document.getElementById("searchlogo");
+    const searchInput = document.getElementById("search-input");
+    const searchButton = document.getElementById("search-button");
+    const searchLogo = document.getElementById("search-logo");
 
     // 可选搜索引擎列表
     let searchEngines = ["baidu", "google", "bing"];
@@ -16,30 +16,30 @@ window.onload = function () {
     }
 
     // 更新搜索引擎图标
-    updateSearchLogo();
+    UpdateSearchLogo();
 
     // 监听回车键进行搜索
     searchInput.addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
-            performSearch();
+            PerformSearch();
         }
     });
 
     // 监听搜索按钮点击进行搜索
-    searchButton.addEventListener("click", performSearch);
+    searchButton.addEventListener("click", PerformSearch);
 
     // 监听搜索 logo 点击切换搜索引擎
-    searchLogo.addEventListener("click", switchSearchEngine);
+    searchLogo.addEventListener("click", SwitchSearchEngine);
 
     // 切换搜索引擎
-    function switchSearchEngine() {
+    function SwitchSearchEngine() {
         currentEngineIndex = (currentEngineIndex + 1) % searchEngines.length; // 轮换引擎
         localStorage.setItem("searchEngine", searchEngines[currentEngineIndex]); // 存储用户选择
-        updateSearchLogo(); // 更新图标
+        UpdateSearchLogo(); // 更新图标
     }
 
     // 根据当前搜索引擎更新 logo
-    function updateSearchLogo() {
+    function UpdateSearchLogo() {
         let engine = searchEngines[currentEngineIndex];
         if (engine === "baidu") {
             searchLogo.style.backgroundImage = "url('../img/baidu.png')";
@@ -51,7 +51,7 @@ window.onload = function () {
     }
 
     // 执行搜索
-    function performSearch() {
+    function PerformSearch() {
         const query = searchInput.value.trim();
         if (query !== "") {
             let searchURL = "";

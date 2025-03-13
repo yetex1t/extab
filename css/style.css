@@ -12,11 +12,11 @@ body {
     margin-top: 25vh;
 }
 
-#imgbox {
+#image-box {
     margin-bottom: 50px;
 }
 
-#searchbox {
+#search-box {
     width: 520px;
     height: 40px;
     display: flex;
@@ -27,7 +27,7 @@ body {
     padding: 0 5px;
 }
 
-#searchlogo {
+#search-logo {
     width: 40px;
     height: 40px;
     border: none;
@@ -36,7 +36,7 @@ body {
     cursor: pointer;
 }
 
-#searchtxt {
+#search-input {
     flex: 1;
     height: 38px;
     border: none;
@@ -45,7 +45,7 @@ body {
     padding: 0 10px;
 }
 
-#searchbtn {
+#search-button {
     width: 40px;
     height: 40px;
     border: none;
@@ -56,6 +56,6 @@ body {
     transition: opacity 0.3s ease;
 }
 
-#searchbtn:hover {
+#search-button:hover {
     opacity: 0.6;
 }
