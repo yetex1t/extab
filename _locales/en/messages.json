@@ -1,0 +1,32 @@
+{
+    "ntPageTitle": {
+        "message": "New Tab"
+    },
+    "ntSearchPlaceholder": {
+        "message": "Type and search ..."
+    },
+    "ntSettingsAlt": {
+        "message": "Settings"
+    },
+    "ntThemeLabel": {
+        "message": "Dark Mode"
+    },
+    "ntSuggestLabel": {
+        "message": "Suggestions"
+    },
+    "ntStatusOn": {
+        "message": "On"
+    },
+    "ntStatusOff": {
+        "message": "Off"
+    },
+    "extName": {
+        "message": "ExTab New Tab"
+    },
+    "extDescription": {
+        "message": "A minimalist browser new tab extension."
+    },
+    "actionTitle": {
+        "message": "Simplicity is beauty!"
+    }
+}

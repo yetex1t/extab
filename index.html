@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title id="page-title" data-i18n="ntPageTitle">New Tab</title>
+        <link rel="icon" href="./img/icon-48.png" type="image/x-icon" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/search.js"></script>
+    </head>
+
+    <body>
+        <div id="content">
+            <div id="image-box">
+                <img src="./img/logo.png" alt="ExTab" id="logo" />
+            </div>
+            <div id="search-box">
+                <input type="button" id="search-logo" tabindex="-1" />
+                <input
+                    type="text"
+                    id="search-input"
+                    data-i18n-placeholder="ntSearchPlaceholder"
+                    placeholder="Type and search ..."
+                    autocomplete="off"
+                />
+                <input type="button" id="search-button" tabindex="-1" />
+                <div id="suggest-list"></div>
+            </div>
+        </div>
+        <span id="version-label"></span>
+        <div id="settings-wrapper">
+            <button id="settings-button" tabindex="-1">
+                <img src="./img/settings.svg" width="22" height="22" alt="Settings" data-i18n-alt="ntSettingsAlt" />
+            </button>
+            <div id="settings-menu">
+                <div class="settings-item" id="theme-toggle">
+                    <span class="settings-label" id="theme-label" data-i18n="ntThemeLabel">Dark Mode</span>
+                    <span class="settings-status" id="theme-status">Off</span>
+                </div>
+                <div class="settings-item" id="suggest-toggle">
+                    <span class="settings-label" id="suggest-label" data-i18n="ntSuggestLabel">Suggestions</span>
+                    <span class="settings-status" id="suggest-status">On</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

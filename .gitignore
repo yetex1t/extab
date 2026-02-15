@@ -1,0 +1,36 @@
+## OS junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+## Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+## Logs and temp files
+*.log
+*.tmp
+*.temp
+
+## Local environment files
+.env
+.env.*
+
+## Build/package artifacts
+dist/
+build/
+coverage/
+*.zip
+*.crx
+
+## Optional Node tooling
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+## Agent docs
+AGENTS.md

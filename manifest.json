@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "default_locale": "en",
+    "name": "__MSG_extName__",
+    "version": "0.1.0",
+    "description": "__MSG_extDescription__",
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "permissions": ["tabs"],
+    "host_permissions": ["*://*/*"],
+    "icons": {
+        "16": "./img/icon-16.png",
+        "48": "./img/icon-48.png",
+        "128": "./img/icon-128.png"
+    },
+    "action": {
+        "default_icon": "./img/icon-48.png",
+        "default_title": "__MSG_actionTitle__"
+    }
+}

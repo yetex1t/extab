@@ -1,0 +1,32 @@
+{
+    "ntPageTitle": {
+        "message": "新标签页"
+    },
+    "ntSearchPlaceholder": {
+        "message": "输入并搜索 ..."
+    },
+    "ntSettingsAlt": {
+        "message": "设置"
+    },
+    "ntThemeLabel": {
+        "message": "暗黑模式"
+    },
+    "ntSuggestLabel": {
+        "message": "搜索预测"
+    },
+    "ntStatusOn": {
+        "message": "开启"
+    },
+    "ntStatusOff": {
+        "message": "关闭"
+    },
+    "extName": {
+        "message": "ExTab 新标签页"
+    },
+    "extDescription": {
+        "message": "一款极简设计的浏览器新标签页扩展程序。"
+    },
+    "actionTitle": {
+        "message": "简单即是美！"
+    }
+}
