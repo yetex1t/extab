@@ -5,8 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title id="page-title" data-i18n="ntPageTitle">New Tab</title>
         <link rel="icon" href="./img/icon-48.png" type="image/x-icon" />
-        <link rel="stylesheet" href="./css/style.css" />
-        <script src="./js/search.js"></script>
+        <link rel="stylesheet" href="./styles/index.css" />
+        <link rel="stylesheet" href="./styles/settings.css" />
+        <link rel="stylesheet" href="./styles/logo.css" />
+        <script src="./core/logo.js"></script>
+        <script src="./core/settings.js"></script>
+        <script src="./core/index.js"></script>
     </head>
 
     <body>
@@ -40,6 +44,43 @@
                 <div class="settings-item" id="suggest-toggle">
                     <span class="settings-label" id="suggest-label" data-i18n="ntSuggestLabel">Suggestions</span>
                     <span class="settings-status" id="suggest-status">On</span>
+                </div>
+                <div class="settings-item" id="custom-logo-open">
+                    <span class="settings-label" data-i18n="ntCustomLogoLabel">Custom Logo</span>
+                    <span class="settings-status" data-i18n="ntCustomLogoOpen">Open</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="logo-modal" aria-hidden="true">
+            <div id="logo-modal-panel">
+                <div id="logo-modal-title" data-i18n="ntCustomLogoLabel">Custom Logo</div>
+                <div id="logo-drop-zone">
+                    <canvas id="logo-crop-canvas" width="560" height="260"></canvas>
+                    <div id="logo-crop-box">
+                        <div class="crop-handle" data-handle="nw"></div>
+                        <div class="crop-handle" data-handle="ne"></div>
+                        <div class="crop-handle" data-handle="sw"></div>
+                        <div class="crop-handle" data-handle="se"></div>
+                    </div>
+                    <div id="logo-drop-hint" data-i18n="ntLogoDropHint">Double-click or drag image here</div>
+                </div>
+                <div id="logo-height-row">
+                    <span data-i18n="ntLogoHeightLabel">Logo Height</span>
+                    <input id="logo-height-input" type="number" step="1" />
+                    <span id="logo-height-default" data-i18n="ntLogoHeightDefault">Default</span>
+                </div>
+                <div id="logo-modal-actions">
+                    <div id="logo-modal-left-actions">
+                        <button class="modal-button" id="logo-crop-btn" data-i18n="ntLogoCrop">Crop</button>
+                        <button class="modal-button" id="logo-crop-confirm-btn" data-i18n="ntLogoCropConfirm">Confirm Crop</button>
+                    </div>
+                    <div id="logo-modal-right-actions">
+                        <button class="modal-button" id="logo-reset-btn" data-i18n="ntLogoReset">Reset</button>
+                        <button class="modal-button" id="logo-clear-btn" data-i18n="ntLogoClear">Clear</button>
+                        <button class="modal-button" id="logo-confirm-btn" data-i18n="ntLogoConfirm" disabled>Confirm</button>
+                        <button class="modal-button" id="logo-cancel-btn" data-i18n="ntLogoCancel">Cancel</button>
+                    </div>
                 </div>
             </div>
         </div>

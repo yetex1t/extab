@@ -14,11 +14,53 @@
     "ntSuggestLabel": {
         "message": "搜索预测"
     },
+    "ntCustomLogoLabel": {
+        "message": "自定义图标"
+    },
+    "ntCustomLogoOpen": {
+        "message": "打开"
+    },
     "ntStatusOn": {
         "message": "开启"
     },
     "ntStatusOff": {
         "message": "关闭"
+    },
+    "ntLogoDropHint": {
+        "message": "双击或拖拽图片到此处"
+    },
+    "ntLogoHeightLabel": {
+        "message": "图标高度"
+    },
+    "ntLogoHeightDefault": {
+        "message": "默认"
+    },
+    "ntLogoCrop": {
+        "message": "裁剪"
+    },
+    "ntLogoCropConfirm": {
+        "message": "确认裁剪"
+    },
+    "ntLogoReset": {
+        "message": "重置"
+    },
+    "ntLogoClear": {
+        "message": "清除"
+    },
+    "ntLogoConfirm": {
+        "message": "确定"
+    },
+    "ntLogoCancel": {
+        "message": "取消"
+    },
+    "ntLogoAlertNoImage": {
+        "message": "请先选择图片。"
+    },
+    "ntLogoAlertTooLarge": {
+        "message": "图片过大，请选择小于 5MB 的图片。"
+    },
+    "ntLogoAlertSaveFail": {
+        "message": "无法保存图标。"
     },
     "extName": {
         "message": "ExTab 新标签页"

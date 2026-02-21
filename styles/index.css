@@ -1,5 +1,5 @@
-/* ==================== Global Layout ==================== */
 
+/* ==================== Global Layout ==================== */
 body {
     margin: 0;
     padding: 0;
@@ -9,6 +9,7 @@ body {
     height: 100vh;
 }
 
+/* ==================== Content Area ==================== */
 #content {
     text-align: center;
     margin-top: 25vh;
@@ -18,6 +19,8 @@ body {
 
 #image-box {
     margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 #logo {
@@ -26,7 +29,6 @@ body {
 }
 
 /* ==================== Search Bar ==================== */
-
 #search-box {
     position: relative;
     width: 100%;
@@ -77,7 +79,6 @@ body {
 }
 
 /* ==================== Suggestions Dropdown ==================== */
-
 #suggest-list {
     display: none;
     position: absolute;
@@ -92,7 +93,6 @@ body {
     overflow: hidden;
 }
 
-/* Remove bottom border radius when suggestions are visible. */
 #search-box.suggest-open {
     border-radius: 12px 12px 0 0;
 }
@@ -113,7 +113,6 @@ body {
 }
 
 /* ==================== Version Label ==================== */
-
 #version-label {
     position: fixed;
     bottom: 18px;
@@ -123,68 +122,7 @@ body {
     user-select: none;
 }
 
-/* ==================== Settings Button and Menu ==================== */
-
-#settings-wrapper {
-    position: fixed;
-    bottom: 18px;
-    right: 18px;
-    z-index: 1000;
-}
-
-#settings-button {
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%;
-    background-color: #ffffff;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.45;
-    transition: opacity 0.2s ease;
-}
-
-#settings-button:hover {
-    opacity: 0.7;
-}
-
-#settings-menu {
-    display: none;
-    position: absolute;
-    bottom: 50px;
-    right: 0;
-    min-width: 160px;
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.settings-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 14px;
-    cursor: pointer;
-    font-size: 14px;
-    color: #333;
-    transition: background-color 0.15s ease;
-}
-
-.settings-item:hover {
-    background-color: #f0f0f0;
-}
-
-.settings-status {
-    font-size: 12px;
-    color: #888;
-}
-
 /* ==================== Dark Mode ==================== */
-
 body.dark-mode {
     background-color: #212529;
 }
@@ -211,33 +149,6 @@ body.dark-mode {
     filter: invert(1);
 }
 
-.dark-mode #settings-button {
-    background-color: #212529;
-    filter: invert(1);
-}
-
-.dark-mode #settings-button:hover {
-    opacity: 0.85;
-}
-
-.dark-mode #settings-menu {
-    background-color: #333;
-    border-color: #444;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-.dark-mode .settings-item {
-    color: #dee2e6;
-}
-
-.dark-mode .settings-item:hover {
-    background-color: #444;
-}
-
-.dark-mode .settings-status {
-    color: #999;
-}
-
 .dark-mode #suggest-list {
     background-color: #333;
     border-color: #444;
@@ -251,7 +162,6 @@ body.dark-mode {
 }
 
 /* ==================== Responsive ==================== */
-
 @media (max-width: 480px) {
     #content {
         margin-top: 18vh;
@@ -280,15 +190,5 @@ body.dark-mode {
     .suggest-item {
         padding: 7px 12px;
         font-size: 14px;
-    }
-
-    #settings-wrapper {
-        bottom: 14px;
-        right: 14px;
-    }
-
-    #settings-button {
-        width: 36px;
-        height: 36px;
     }
 }

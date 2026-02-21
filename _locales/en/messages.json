@@ -14,11 +14,53 @@
     "ntSuggestLabel": {
         "message": "Suggestions"
     },
+    "ntCustomLogoLabel": {
+        "message": "Custom Logo"
+    },
+    "ntCustomLogoOpen": {
+        "message": "Open"
+    },
     "ntStatusOn": {
         "message": "On"
     },
     "ntStatusOff": {
         "message": "Off"
+    },
+    "ntLogoDropHint": {
+        "message": "Double-click or drag image here"
+    },
+    "ntLogoHeightLabel": {
+        "message": "Logo Height"
+    },
+    "ntLogoHeightDefault": {
+        "message": "Default"
+    },
+    "ntLogoCrop": {
+        "message": "Crop"
+    },
+    "ntLogoCropConfirm": {
+        "message": "Confirm Crop"
+    },
+    "ntLogoReset": {
+        "message": "Reset"
+    },
+    "ntLogoClear": {
+        "message": "Clear"
+    },
+    "ntLogoConfirm": {
+        "message": "Confirm"
+    },
+    "ntLogoCancel": {
+        "message": "Cancel"
+    },
+    "ntLogoAlertNoImage": {
+        "message": "Please choose an image first."
+    },
+    "ntLogoAlertTooLarge": {
+        "message": "Image too large, please choose an image smaller than 5MB."
+    },
+    "ntLogoAlertSaveFail": {
+        "message": "Unable to save logo."
     },
     "extName": {
         "message": "ExTab New Tab"
