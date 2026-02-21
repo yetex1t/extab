@@ -285,8 +285,26 @@ window.initLogoModule = function (context) {
      * @param {boolean} visible Whether modal should be visible.
      */
     function setLogoModalVisible(visible) {
+        if (!visible) {
+            releaseModalFocusBeforeHide();
+        }
         logoModal.classList.toggle("open", visible);
         logoModal.setAttribute("aria-hidden", visible ? "false" : "true");
+    }
+
+    /**
+     * Moves focus out of the modal before it becomes aria-hidden.
+     * This prevents accessibility warnings when a focused modal control is hidden.
+     */
+    function releaseModalFocusBeforeHide() {
+        const activeElement = document.activeElement;
+        if (!(activeElement instanceof HTMLElement)) {
+            return;
+        }
+        if (!logoModal.contains(activeElement)) {
+            return;
+        }
+        activeElement.blur();
     }
 
     /** Resets modal editing state without touching persisted logo data. */
