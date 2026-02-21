@@ -19,11 +19,24 @@
 
 ## 页面展示
 
-| 默认首页 | 暗黑模式 |
-| --- | --- |
-| <img src="./docs/img/extab-preview-light-zh-cn.png" alt="ExTab Light Preview" width="360" /> | <img src="./docs/img/extab-preview-dark-zh-cn.png" alt="ExTab Dark Preview" width="360" /> |
-| 自定义图标 | 功能介绍 |
-| <img src="./docs/img/extab-preview-logo-zh-cn.png" alt="ExTab Custom Logo Preview" width="360" /> | <img src="./docs/img/extab-preview-custom-zh-cn.png" alt="ExTab Feature Overview" width="360" /> |
+<table align="center">
+  <tr>
+    <th>默认</th>
+    <th>暗黑模式</th>
+  </tr>
+  <tr>
+    <td><img src="./docs/img/extab-preview-light-zh-cn.png" alt="ExTab Light Preview" width="360" /></td>
+    <td><img src="./docs/img/extab-preview-dark-zh-cn.png" alt="ExTab Dark Preview" width="360" /></td>
+  </tr>
+  <tr>
+    <th>自定义图标</th>
+    <th>功能介绍</th>
+  </tr>
+  <tr>
+    <td><img src="./docs/img/extab-preview-logo-zh-cn.png" alt="ExTab Custom Logo Preview" width="360" /></td>
+    <td><img src="./docs/img/extab-preview-custom-zh-cn.png" alt="ExTab Feature Overview" width="360" /></td>
+  </tr>
+</table>
 
 ## 使用方法
 

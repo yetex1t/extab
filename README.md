@@ -19,11 +19,24 @@ A minimalist browser new tab extension
 
 ## Preview
 
-| Default Home | Dark Mode |
-| --- | --- |
-| <img src="./docs/img/extab-preview-light-en.png" alt="ExTab Light Preview" width="360" /> | <img src="./docs/img/extab-preview-dark-en.png" alt="ExTab Dark Preview" width="360" /> |
-| Custom Logo | Feature Overview |
-| <img src="./docs/img/extab-preview-logo-en.png" alt="ExTab Custom Logo Preview" width="360" /> | <img src="./docs/img/extab-preview-custom-en.png" alt="ExTab Feature Overview" width="360" /> |
+<table align="center">
+  <tr>
+    <th>Default</th>
+    <th>Dark Mode</th>
+  </tr>
+  <tr>
+    <td><img src="./docs/img/extab-preview-light-en.png" alt="ExTab Light Preview" width="360" /></td>
+    <td><img src="./docs/img/extab-preview-dark-en.png" alt="ExTab Dark Preview" width="360" /></td>
+  </tr>
+  <tr>
+    <th>Custom Logo</th>
+    <th>Feature Overview</th>
+  </tr>
+  <tr>
+    <td><img src="./docs/img/extab-preview-logo-en.png" alt="ExTab Custom Logo Preview" width="360" /></td>
+    <td><img src="./docs/img/extab-preview-custom-en.png" alt="ExTab Feature Overview" width="360" /></td>
+  </tr>
+</table>
 
 ## Usage
 
