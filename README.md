@@ -19,13 +19,21 @@ A minimalist browser new tab extension
 
 ## Preview
 
-<p align="center"><img src="./docs/img/extab-preview-en.png" alt="ExTab Preview" width="750" /></p>
+| Default Home | Dark Mode |
+| --- | --- |
+| <img src="./docs/img/extab-preview-light-en.png" alt="ExTab Light Preview" width="360" /> | <img src="./docs/img/extab-preview-dark-en.png" alt="ExTab Dark Preview" width="360" /> |
+| Custom Logo | Feature Overview |
+| <img src="./docs/img/extab-preview-logo-en.png" alt="ExTab Custom Logo Preview" width="360" /> | <img src="./docs/img/extab-preview-custom-en.png" alt="ExTab Feature Overview" width="360" /> |
 
 ## Usage
 
 1. Download the latest extension archive from [GitHub Releases](https://github.com/yetex1t/extab/releases/latest), then extract it to a fixed folder (do not move it later).
 2. Open **Chrome**, go to **Manage Extensions**, and enable **Developer mode**.
 3. Click **Load unpacked**, select the extracted extension folder, then open a new tab and choose **Keep it** if prompted.
+
+## Acknowledgements
+
+- [OpenCode](https://opencode.ai/)
 
 ## License
 

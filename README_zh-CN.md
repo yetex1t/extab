@@ -19,13 +19,21 @@
 
 ## 页面展示
 
-<p align="center"><img src="./docs/img/extab-preview-zh-cn.png" alt="ExTab Preview" width="750" /></p>
+| 默认首页 | 暗黑模式 |
+| --- | --- |
+| <img src="./docs/img/extab-preview-light-zh-cn.png" alt="ExTab Light Preview" width="360" /> | <img src="./docs/img/extab-preview-dark-zh-cn.png" alt="ExTab Dark Preview" width="360" /> |
+| 自定义图标 | 功能介绍 |
+| <img src="./docs/img/extab-preview-logo-zh-cn.png" alt="ExTab Custom Logo Preview" width="360" /> | <img src="./docs/img/extab-preview-custom-zh-cn.png" alt="ExTab Feature Overview" width="360" /> |
 
 ## 使用方法
 
 1. 在 [GitHub Releases](https://github.com/yetex1t/extab/releases/latest) 中下载最新版本扩展程序的压缩包，解压到特定文件夹 (不要移动该位置)；
 2. 打开 **Chrome**，点击扩展图标，选择 **管理扩展程序**，并打开 **开发者模式**；
 3. 点击 **加载已解压的扩展程序**，选择扩展程序解压的文件夹，然后打开新标签页后会弹出窗口，选择 **保持现状**。
+
+## 鸣谢
+
+- [OpenCode](https://opencode.ai/)
 
 ## 许可
 
