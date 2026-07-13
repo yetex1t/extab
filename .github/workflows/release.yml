@@ -1,0 +1,43 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Package extension
+        run: |
+          mkdir -p _package/extab
+          cp -r _locales core styles img index.html manifest.json _package/extab/
+          cd _package && zip -r "../extab-${{ github.ref_name }}.zip" ./*
+
+      - name: Extract changelog
+        id: changelog
+        run: |
+          VERSION="${{ github.ref_name }}"
+          VERSION_NO_V="${VERSION#v}"
+          {
+            echo "## Release Notes"
+            echo ""
+            awk -v ver="[$VERSION_NO_V]" 'index($0, "## " ver) == 1 {found=1; next} found && /^## \[/{exit} found' CHANGELOG.md
+          } > release_body.md
+
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${{ github.ref_name }}" \
+            --title "ExTab ${{ github.ref_name }}" \
+            --notes-file release_body.md \
+            "extab-${{ github.ref_name }}.zip"
